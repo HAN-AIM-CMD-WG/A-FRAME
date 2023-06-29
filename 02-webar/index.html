@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>eerste webar</title>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <!--AR functionaliteit wordt ingeladen-->
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+  </head>
+  <body style="margin: 0; overflow: hidden;">
+    <a-scene embedded vr-mode-ui="enabled: false;" arjs="debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;">
+        <!--box wordt gekoppeld aan marker kanji --> 
+        <a-marker type="pattern" url="data/kanji.patt">
+            <a-box position="0 0.5 0" 
+                   material="color: red; transparent: true; opacity: 0.80;">
+            </a-box>
+        <!--3d model wordt gekoppeld aan marker hiro-->
+        </a-marker>
+        <a-marker type="pattern" url="data/hiro.patt">
+            <a-entity gltf-model="assets/drums.gltf" position="0 0 0" rotation="0 0 0"></a-entity>
+        </a-marker>
+        <a-entity camera></a-entity>
+    </a-scene>
+  </body>
+</html>
+
