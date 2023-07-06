@@ -1,0 +1,30 @@
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #e50056;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  margin: 0 10px;
+  font-family: 'Roboto', sans-serif;
+}
+.header {
+    font-family: 'Roboto', sans-serif;
+}
+h1 {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+.button:hover {
+  background-color: #454545;
+}
+
+
